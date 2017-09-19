@@ -71,6 +71,7 @@ curseforge {
 		addGameVersion '1.11.2'
 		addGameVersion '1.12'
 		addGameVersion '1.12.1'
+		addGameVersion '1.12.2'
         mainArtifact(jar) {
             displayName = "Better Placement ${mod_version}"
         }

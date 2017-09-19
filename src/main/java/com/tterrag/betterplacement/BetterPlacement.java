@@ -23,7 +23,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.Phase;
 import net.minecraftforge.fml.relauncher.ReflectionHelper;
 import net.minecraftforge.fml.relauncher.Side;
 
-@Mod(modid = MOD_ID, name = MOD_NAME, version = VERSION, clientSideOnly = true, guiFactory = "com.tterrag.betterplacement.GuiFactory")
+@Mod(modid = MOD_ID, name = MOD_NAME, version = VERSION, clientSideOnly = true, acceptedMinecraftVersions = "[1.9.4, 1.13)", guiFactory = "com.tterrag.betterplacement.GuiFactory")
 @EventBusSubscriber(Side.CLIENT)
 public class BetterPlacement {
 
