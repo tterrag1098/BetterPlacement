@@ -1,0 +1,16 @@
+[
+{
+  "modid": "betterplacement",
+  "name": "Better Placement",
+  "description": "Syncs block placement to cursor movement, allowing easier and faster building.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://tterrag.com",
+  "updateUrl": "http://ci.tterrag.com/job/BetterPlacement",
+  "authorList": ["tterrag"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
