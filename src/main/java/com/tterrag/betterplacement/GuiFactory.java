@@ -2,9 +2,9 @@ package com.tterrag.betterplacement;
 
 import java.util.Set;
 
+import cpw.mods.fml.client.IModGuiFactory;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraftforge.fml.client.IModGuiFactory;
 
 public class GuiFactory implements IModGuiFactory {
 
@@ -25,17 +25,5 @@ public class GuiFactory implements IModGuiFactory {
     @Deprecated
     public RuntimeOptionGuiHandler getHandlerFor(RuntimeOptionCategoryElement element) {
         return null;
-    }
-
-//  1.12
-//  @Override
-    public boolean hasConfigGui() {
-        return true;
-    }
-    
-//  1.12
-//  @Override
-    public GuiScreen createConfigGui(GuiScreen parentScreen) {
-        return new ConfigGui(parentScreen);
     }
 }

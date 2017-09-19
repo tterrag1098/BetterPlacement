@@ -4,13 +4,13 @@ buildscript {
         maven { url = "http://files.minecraftforge.net/maven" }
         maven { url = "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
-    dependencies { classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT' }
+    dependencies { classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT' }
 }
 plugins {
  	id 'com.matthewprenger.cursegradle' version '1.0.9'
 }
 
-apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'forge'
 
 boolean dev = System.getenv('RELEASE') == null || System.getenv('RELEASE').equals('false');
 ext.buildnumber = System.getenv().BUILD_NUMBER ?: 'custom';
@@ -23,8 +23,8 @@ sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 minecraft {
-    version = "${minecraft_version}-${forge_version}"
-	mappings = 'stable_29'
+    version = "${minecraft_version}-${forge_version}-${minecraft_version}"
+	mappings = 'stable_12'
 	
     runDir = 'run'
 	
