@@ -17,7 +17,7 @@ ext.buildnumber = System.getenv().BUILD_NUMBER ?: 'custom';
 
 group = 'com.tterrag.betterplacement'
 archivesBaseName = "BetterPlacement"
-version = "${mod_version}-${buildnumber}"
+version = "MC${minecraft_version}-${mod_version}-${buildnumber}"
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
@@ -67,11 +67,6 @@ curseforge {
         	changelogType = 'text'
         }
         releaseType = project.release_type
-		addGameVersion '1.9.4'
-		addGameVersion '1.11.2'
-		addGameVersion '1.12'
-		addGameVersion '1.12.1'
-		addGameVersion '1.12.2'
         mainArtifact(jar) {
             displayName = "Better Placement ${mod_version}"
         }
