@@ -60,7 +60,6 @@ public class BetterPlacement {
             if (hover != null && hover.typeOfHit == Type.BLOCK) {
                 BlockPos pos = hover.getBlockPos();
                 if (timer > 0 && !pos.equals(lastTargetPos) && (lastTargetPos == null || !pos.equals(lastTargetPos.offset(lastTargetSide)))) {
-                    System.out.println(lastTargetPos + " " + lastTargetSide);
                     setDelayTimer.invoke(Minecraft.getMinecraft(), 0);
                 } else if (Configs.forceNewLoc && timer == 0 && pos.equals(lastTargetPos) && hover.sideHit == lastTargetSide) {
                     setDelayTimer.invoke(Minecraft.getMinecraft(), 4);

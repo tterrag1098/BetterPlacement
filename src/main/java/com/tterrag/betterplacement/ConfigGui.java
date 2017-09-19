@@ -13,3 +13,4 @@ public class ConfigGui extends GuiConfig {
                 I18n.format(BetterPlacement.MOD_ID + ".config.title"));
     }
 }
+    
