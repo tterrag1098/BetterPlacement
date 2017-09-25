@@ -25,6 +25,8 @@ public class Configs {
     public static void sync() {
         creativeOnly    = config.getBoolean("creativeOnly", Configuration.CATEGORY_GENERAL, creativeOnly, "If true, the modifications will only apply in creative mode.");
         forceNewLoc     = config.getBoolean("forceNewLoc", Configuration.CATEGORY_GENERAL, forceNewLoc, "When true, a held right click will never place two blocks in a row, the player must move the cursor to a new location.");
+        
+        config.save();
     }
 
     @SubscribeEvent
