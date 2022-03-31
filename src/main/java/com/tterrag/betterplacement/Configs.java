@@ -11,7 +11,7 @@ public class Configs {
 
     public static boolean creativeOnly;
 
-    public static boolean forceNewLoc = true;
+    public static boolean forceNewLoc = false;
     
     static Configuration config;
     
